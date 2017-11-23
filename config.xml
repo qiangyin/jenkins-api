@@ -1,0 +1,60 @@
+<maven2-moduleset plugin="maven-plugin@2.7.1">
+    <actions></actions>
+    <description>test description</description>
+    <keepDependencies></keepDependencies>
+    <properties></properties>
+    <scm class="hudson.scm.SubversionSCM" plugin="subversion@1.54">
+        <ScmContent>
+            <locations>
+                <hudson.scm.SubversionSCM_-ModuleLocation>
+                    <remote>http://some-svn-url</remote>
+                    <local>.</local>
+                    <depthOption>infinity</depthOption>
+                    <ignoreExternalsOption>false</ignoreExternalsOption>
+                </hudson.scm.SubversionSCM_-ModuleLocation>
+            </locations>
+            <excludedRegions></excludedRegions>
+            <includedRegions></includedRegions>
+            <excludedUsers></excludedUsers>
+            <excludedRevprop></excludedRevprop>
+            <excludedCommitMessages></excludedCommitMessages>
+            <workspaceUpdater class="hudson.scm.subversion.UpdateUpdater"></workspaceUpdater>
+            <ignoreDirPropChanges>false</ignoreDirPropChanges>
+            <filterChangelog>false</filterChangelog>
+        </ScmContent>
+    </scm>
+    <canRoam></canRoam>
+    <disabled></disabled>
+    <blockBuildWhenDownstreamBuilding></blockBuildWhenDownstreamBuilding>
+    <blockBuildWhenUpstreamBuilding></blockBuildWhenUpstreamBuilding>
+    <triggers>
+        <hudson.triggers.SCMTrigger>
+            <spec></spec>
+            <ignorePostCommitHooks></ignorePostCommitHooks>
+        </hudson.triggers.SCMTrigger>
+    </triggers>
+    <concurrentBuild></concurrentBuild>
+    <goals></goals>
+    <aggregatorStyleBuild></aggregatorStyleBuild>
+    <incrementalBuild></incrementalBuild>
+    <ignoreUpstremChanges></ignoreUpstremChanges>
+    <archivingDisabled></archivingDisabled>
+    <siteArchivingDisabled></siteArchivingDisabled>
+    <fingerprintingDisabled></fingerprintingDisabled>
+    <resolveDependencies></resolveDependencies>
+    <processPlugins></processPlugins>
+    <mavenName></mavenName>
+    <mavenValidationLevel></mavenValidationLevel>
+    <defaultGoals></defaultGoals>
+    <runHeadless></runHeadless>
+    <disableTriggerDownstreamProjects></disableTriggerDownstreamProjects>
+    <settings class="jenkins.mvn.DefaultSettingsProvider"></settings>
+    <globalSettings class="jenkins.mvn.DefaultSettingsProvider"></globalSettings>
+    <runPostStepsIfResult>
+        <name>FAILURE</name>
+        <ordinal>2</ordinal>
+        <color>RED</color>
+        <completeBuild>true</completeBuild>
+    </runPostStepsIfResult>
+    <postbuilders></postbuilders>
+</maven2-moduleset>

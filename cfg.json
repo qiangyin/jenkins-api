@@ -1,0 +1,7 @@
+{
+  "jenkins": {
+    "baseUrl": "http://10.128.31.109:8800/jenkins",
+    "userName": "admin",
+    "password": "admin"
+  }
+}
